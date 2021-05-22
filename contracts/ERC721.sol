@@ -87,7 +87,7 @@ contract ERC721 is ERC165,IERC721 {
     petObj[] public petObjArray1;
     
     constructor () public {
-        _name = "waqas-petShop";
+        _name = "waqas-petShop1";
         _symbol = "WPS";
         _contractOwner = msg.sender;
         
@@ -116,7 +116,7 @@ contract ERC721 is ERC165,IERC721 {
     
     
     function _mint(string memory petUri, uint256 price, string memory breed, string memory location, uint256 age) public returns (petObj memory) {
-        require(msg.sender == _contractOwner, "This function is allowed for contract owner only");
+       // require(msg.sender == _contractOwner, "This function is allowed for contract owner only");
         
         
         
